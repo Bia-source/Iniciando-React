@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "../../components/Button/Button";
 import "./style.css";
 
-export default function Home({ title, color }) {
+export default function Home() {
     const [personagens, setPersonagens] = useState([]);
 
     async function handlePersonagens() {
@@ -21,8 +21,8 @@ export default function Home({ title, color }) {
 
     return (
         <>
-            <button onClick={handlePersonagens}>mostrar</button>
-            <Button personagens={personagens} color="yellow" handleClick={handlePersonagens} />
+            
+            <Button title="Buscar" color="yellow" handleClick={handlePersonagens} />
             <Button title="Mostrar" color="green" handleClick={showPersonagens} />
             <Button title="Deletar" color="red" handleClick={deleteAll} />
 
