@@ -1,3 +1,9 @@
+@font-face{
+   font-family: "Rakkas";
+   font-style: normal;
+   font-weight: normal;
+   src: url("../public/fonts/Rakkas-Regular.ttf")
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -31,10 +37,14 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-family: "Oswald";
+h1{
+  font-family: "Rakkas";
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+p{
+  font-family: "Rakkas";
 }
 
 button {
